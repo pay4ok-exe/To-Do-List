@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 150px;
+    background-color: #f8f9fa;
+}
+
+.todo-container{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group input[type="text"] {
+    margin-right: 20px; /* Adjust this value as needed */
+}
+
+.input-group .input-group-append button {
+    width: 100px; /* Adjust this value as needed */
+}
+
+#todo-list {
+    width: 1000px; /* Same width as todo-container */
+    background-color: white; /* Same background color as todo-container */
+    padding: 20px; /* Same padding as todo-container */
+    border-radius: 10px; /* Same border radius as todo-container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Same box shadow as todo-container */
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+
+.edit-btn {
+    margin-right: 10px;
+}
+
+.button-div {
+    display: flex; /* Use flexbox for button div */
+    position: absolute; /* Positioning for the edit/remove buttons */
+    top: 0;
+    right: 0;
+    visibility: hidden; /* Initially hide the buttons */
+}
+
+.todo-item:hover .button-div {
+    visibility: visible; /* Show the buttons when hovering over the task */
+}
+
+/* Style edit button */
+
+/* Style remove button */
+.remove-btn {
+    background-color: red;
+    color: white;
+}
+
+.text-div {
+    flex-grow: 1; /* Allow the text div to grow to fill available space */
+    margin-left: 10px;
+}
+
+/* Position edit and remove buttons to the right */
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px; /* Add space between each task */
+}
+.edit-btn,
+.remove-btn {
+    margin-left: 5px; /* Add some space between the buttons */
+}

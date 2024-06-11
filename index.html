@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="bootstrap_package/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="todo-container">
+        <p class="text-center font-monospace fs-1">To-Do List</p>
+        
+        <div class="input-group mt-3 mb-3">
+            <input type="text" id="new-task" class="form-control font-monospace rounded-3" placeholder="Add new task">
+            <div class="input-group-append">
+                <button id="add-btn" class="btn btn-primary font-monospace rounded-3">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="todo-list">
+
+
+        <!-- Todo items will be appended here -->
+
+
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
